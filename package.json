@@ -1,0 +1,28 @@
+{
+  "name": "@funebra/bqc-converter",
+  "version": "0.1.0",
+  "description": "Evidence-status-aware reference converter for BQC Research Framework v1.0 and Evidence Archive r0001.",
+  "main": "src/bqc-converter.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node test/bqc-converter.test.js",
+    "example": "node examples/basic-usage.js"
+  },
+  "keywords": [
+    "bqc",
+    "funebra",
+    "alpha-tally",
+    "research-framework",
+    "reference-implementation"
+  ],
+  "author": "Peter M. Lugha / pLabs Entertainment",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/funebra/bqc-converter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/funebra/bqc-converter/issues"
+  },
+  "homepage": "https://github.com/funebra/bqc-converter#readme"
+}
