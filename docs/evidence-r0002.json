@@ -1,0 +1,79 @@
+{
+  "framework": "BQC Research Framework v1.0",
+  "archiveRevision": "r0002",
+  "date": "2026-08-18",
+  "policy": "confirmed-anchors-only",
+  "exclusions": [
+    "no a9900 = 80.0",
+    "no b0000 = 100.0",
+    "no interpolation of missing 55/99/90 cells",
+    "no reuse of rejected P001/P002 predictions as evidence"
+  ],
+  "anchors": [
+    { "bqc": "a0000", "value": 0.0,  "context": {"z":"a","y":"00","x":"00"}, "status": "Observed", "record": "A1-r0002" },
+    { "bqc": "a0001", "value": 0.1,  "context": {"z":"a","y":"00","x":"01"}, "status": "Observed", "record": "A1-r0002" },
+    { "bqc": "a0055", "value": 1.0,  "context": {"z":"a","y":"00","x":"55"}, "status": "Observed", "record": "A1-r0002" },
+    { "bqc": "a0099", "value": 1.8,  "context": {"z":"a","y":"00","x":"99"}, "status": "Observed", "record": "A1-r0002" },
+    { "bqc": "a0090", "value": 1.9,  "context": {"z":"a","y":"00","x":"90"}, "status": "Observed", "record": "A1-r0002" },
+
+    { "bqc": "a0100", "value": 2.0,  "context": {"z":"a","y":"01","x":"00"}, "status": "Observed", "record": "A1-r0002" },
+    { "bqc": "a0101", "value": 2.1,  "context": {"z":"a","y":"01","x":"01"}, "status": "Observed", "record": "A1-r0002" },
+    { "bqc": "a0155", "value": 3.0,  "context": {"z":"a","y":"01","x":"55"}, "status": "Observed", "record": "A1-r0002" },
+    { "bqc": "a0999", "value": 3.8,  "context": {"z":"a","y":"09","x":"99"}, "status": "Observed", "record": "A1-r0002" },
+    { "bqc": "a0990", "value": 3.9,  "context": {"z":"a","y":"09","x":"90"}, "status": "Observed", "record": "A1-r0002" },
+
+    { "bqc": "a1100", "value": 20.0, "context": {"z":"a","y":"11","x":"00"}, "status": "Observed", "record": "A1-r0002" },
+    { "bqc": "a1101", "value": 20.1, "context": {"z":"a","y":"11","x":"01"}, "status": "Observed", "record": "A1-r0002" },
+    { "bqc": "a1555", "value": 30.0, "context": {"z":"a","y":"15","x":"55"}, "status": "Observed", "record": "A1-r0002" },
+
+    { "bqc": "a9900", "value": 37.0, "context": {"z":"a","y":"99","x":"00"}, "status": "Observed", "record": "A1-r0002" },
+    { "bqc": "a9901", "value": 37.1, "context": {"z":"a","y":"99","x":"01"}, "status": "Observed", "record": "A1-r0002" },
+    { "bqc": "a9955", "value": 37.2, "context": {"z":"a","y":"99","x":"55"}, "status": "Observed", "record": "A1-r0002" },
+    { "bqc": "a9999", "value": 38.0, "context": {"z":"a","y":"99","x":"99"}, "status": "Observed", "record": "A1-r0002" },
+
+    { "bqc": "a9100", "value": 40.0, "context": {"z":"a","y":"91","x":"00"}, "status": "Observed", "record": "A1-r0002" },
+    { "bqc": "a9101", "value": 40.1, "context": {"z":"a","y":"91","x":"01"}, "status": "Observed", "record": "A1-r0002" },
+    { "bqc": "a9155", "value": 50.0, "context": {"z":"a","y":"91","x":"55"}, "status": "Observed", "record": "A1-r0002" },
+    { "bqc": "a9199", "value": 50.8, "context": {"z":"a","y":"91","x":"99"}, "status": "Observed", "record": "A1-r0002" },
+
+    { "bqc": "b0000", "value": 80.0, "context": {"z":"b","y":"00","x":"00"}, "status": "Observed", "record": "A1-r0002" },
+    { "bqc": "b0001", "value": 80.1, "context": {"z":"b","y":"00","x":"01"}, "status": "Observed", "record": "A1-r0002" },
+    { "bqc": "b0055", "value": 90.0, "context": {"z":"b","y":"00","x":"55"}, "status": "Observed", "record": "A1-r0002" },
+    { "bqc": "b0099", "value": 90.8, "context": {"z":"b","y":"00","x":"99"}, "status": "Observed", "record": "A1-r0002" }
+  ],
+  "rejectedPredictions": [
+    {
+      "record": "C4-PF6-P001",
+      "model": "D_a-H1",
+      "predictions": { "a9900": 38.0, "a9901": 38.1, "a9955": 39.0 },
+      "revealed":   { "a9900": 37.0, "a9901": 37.1, "a9955": 37.2 },
+      "score": "0/3",
+      "status": "Rejected"
+    },
+    {
+      "record": "C4-PF6-P002",
+      "model": "D_a-H2",
+      "predictions": { "a9100": 37.0, "a9101": 37.1, "a9155": 37.2 },
+      "revealed":   { "a9100": 40.0, "a9101": 40.1, "a9155": 50.0 },
+      "score": "0/3",
+      "status": "Rejected"
+    }
+  ],
+  "structuralRecords": [
+    {
+      "id": "B3-0003",
+      "content": "Minor alpha-tally pattern (a00xx branch only)",
+      "status": "Candidate / branch-supported"
+    },
+    {
+      "id": "B3-0004",
+      "content": "Context-sensitive transition signatures",
+      "status": "Candidate / multi-anchor supported"
+    },
+    {
+      "id": "B3-0005",
+      "content": "Observed context-transition graph",
+      "status": "Candidate / multi-anchor supported"
+    }
+  ]
+}

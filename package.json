@@ -1,12 +1,13 @@
 {
   "name": "@funebra/bqc-converter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Evidence-status-aware reference converter for BQC Research Framework v1.0 and Evidence Archive r0001.",
   "main": "src/bqc-converter.js",
   "type": "commonjs",
   "scripts": {
     "test": "node test/bqc-converter.test.js",
-    "example": "node examples/basic-usage.js"
+    "example": "node examples/basic-usage.js",
+    "generate:evidence": "node scripts/generate-confirmed-anchors.js"
   },
   "keywords": [
     "bqc",

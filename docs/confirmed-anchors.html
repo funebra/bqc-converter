@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BQC Confirmed Anchors — Evidence Archive r0002</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 2rem; line-height: 1.45; }
+  h1 { font-size: 1.5rem; margin-bottom: 0.25rem; }
+  .meta { color: #555; margin-bottom: 1.5rem; }
+  table { border-collapse: collapse; margin: 1rem 0; }
+  th, td { border: 1px solid #888; padding: 0.35rem 0.7rem; text-align: left; }
+  th { background: #f0f0f0; }
+  .note { max-width: 54rem; font-size: 0.9rem; color: #333; margin-top: 1.5rem; }
+  code { background: #f4f4f4; padding: 0.1rem 0.3rem; }
+</style>
+</head>
+<body>
+
+<h1>BQC Confirmed Anchors</h1>
+<div class="meta">
+  Framework: BQC Research Framework v1.0<br>
+  Evidence Archive: <strong>r0002</strong><br>
+  Policy: confirmed-anchors-only — no interpolation, no rejected predictions, no lucky guesses
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>BQC</th>
+      <th>Value</th>
+      <th>Context (z,y)</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>a0000</td>
+      <td>0</td>
+      <td>(a,00)</td>
+      <td>Observed</td>
+    </tr>
+    <tr>
+      <td>a0001</td>
+      <td>0.1</td>
+      <td>(a,00)</td>
+      <td>Observed</td>
+    </tr>
+    <tr>
+      <td>a0055</td>
+      <td>1</td>
+      <td>(a,00)</td>
+      <td>Observed</td>
+    </tr>
+    <tr>
+      <td>a0099</td>
+      <td>1.8</td>
+      <td>(a,00)</td>
+      <td>Observed</td>
+    </tr>
+    <tr>
+      <td>a0090</td>
+      <td>1.9</td>
+      <td>(a,00)</td>
+      <td>Observed</td>
+    </tr>
+    <tr>
+      <td>a0100</td>
+      <td>2</td>
+      <td>(a,01)</td>
+      <td>Observed</td>
+    </tr>
+    <tr>
+      <td>a0101</td>
+      <td>2.1</td>
+      <td>(a,01)</td>
+      <td>Observed</td>
+    </tr>
+    <tr>
+      <td>a0155</td>
+      <td>3</td>
+      <td>(a,01)</td>
+      <td>Observed</td>
+    </tr>
+    <tr>
+      <td>a0999</td>
+      <td>3.8</td>
+      <td>(a,09)</td>
+      <td>Observed</td>
+    </tr>
+    <tr>
+      <td>a0990</td>
+      <td>3.9</td>
+      <td>(a,09)</td>
+      <td>Observed</td>
+    </tr>
+    <tr>
+      <td>a1100</td>
+      <td>20</td>
+      <td>(a,11)</td>
+      <td>Observed</td>
+    </tr>
+    <tr>
+      <td>a1101</td>
+      <td>20.1</td>
+      <td>(a,11)</td>
+      <td>Observed</td>
+    </tr>
+    <tr>
+      <td>a1555</td>
+      <td>30</td>
+      <td>(a,15)</td>
+      <td>Observed</td>
+    </tr>
+    <tr>
+      <td>a9900</td>
+      <td>37</td>
+      <td>(a,99)</td>
+      <td>Observed</td>
+    </tr>
+    <tr>
+      <td>a9901</td>
+      <td>37.1</td>
+      <td>(a,99)</td>
+      <td>Observed</td>
+    </tr>
+    <tr>
+      <td>a9955</td>
+      <td>37.2</td>
+      <td>(a,99)</td>
+      <td>Observed</td>
+    </tr>
+    <tr>
+      <td>a9999</td>
+      <td>38</td>
+      <td>(a,99)</td>
+      <td>Observed</td>
+    </tr>
+    <tr>
+      <td>a9100</td>
+      <td>40</td>
+      <td>(a,91)</td>
+      <td>Observed</td>
+    </tr>
+    <tr>
+      <td>a9101</td>
+      <td>40.1</td>
+      <td>(a,91)</td>
+      <td>Observed</td>
+    </tr>
+    <tr>
+      <td>a9155</td>
+      <td>50</td>
+      <td>(a,91)</td>
+      <td>Observed</td>
+    </tr>
+    <tr>
+      <td>a9199</td>
+      <td>50.8</td>
+      <td>(a,91)</td>
+      <td>Observed</td>
+    </tr>
+    <tr>
+      <td>b0000</td>
+      <td>80</td>
+      <td>(b,00)</td>
+      <td>Observed</td>
+    </tr>
+    <tr>
+      <td>b0001</td>
+      <td>80.1</td>
+      <td>(b,00)</td>
+      <td>Observed</td>
+    </tr>
+    <tr>
+      <td>b0055</td>
+      <td>90</td>
+      <td>(b,00)</td>
+      <td>Observed</td>
+    </tr>
+    <tr>
+      <td>b0099</td>
+      <td>90.8</td>
+      <td>(b,00)</td>
+      <td>Observed</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <strong>Policy enforcement</strong><br>
+  • Speculative values such as <code>a9900 = 80.0</code> and <code>b0000 = 100.0</code> are excluded.<br>
+  • Rejected blind tests (C4-PF6-P001, C4-PF6-P002) are recorded in the JSON but never appear as evidence rows.<br>
+  • Gaps are intentional; no interpolation is performed.<br><br>
+  This page is generated from <code>docs/evidence-r0002.json</code> by<br>
+  <code>npm run generate:evidence</code>.<br>
+  Manual edits to the HTML are forbidden; all changes must first enter the Evidence Archive.
+</div>
+
+</body>
+</html>
